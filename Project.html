@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="styesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<style>
+    body{
+         font-family: 'Roboto', sans-serif;
+         margin: 0;
+         padding: 0;
+         background: linear-gradient(to right, #e66465, #9198e5);
+    }
+    .contact-section{
+      padding: 100px 0;
+      color: #110101;
+      text-align: center;
+      position: relative;
+      background: url('pexels.pixabay-33153.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    .contact-section::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .contact-section .container{
+        position: relative;
+        z-index: 2;
+    }
+    .contact-section .display-4{
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+        animation: text-glow 2s infinite alternate;
+
+
+    }
+    .contact-section .lead{
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+    }
+    .contact-card{
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s box-shadow 0.3s;
+        position: relative;
+        border: 4px solid transparent;
+        border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        border-image-slice: 1;
+        animation: border-rotate 6s linear infinite;
+ 
+
+    }
+    @keyframes border-rotate {
+        0% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        25% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        50% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        75% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        100% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+    }
+      /* @keyframes text-glow {
+        0% {
+            transform: rotate(0deg) rotate(0deg);
+        }
+         50% {
+            transform: rotate(180deg) rotate(180deg);
+        }
+         100% {
+            transform: rotate(360deg) rotate(360deg);
+        }
+
+        
+      } */
+    
+    .contact-card:hover{
+        transform: translate(0, -10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    }
+    .contact-card label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+
+    }
+    .contact-card .form-control{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+
+    }
+    .contact-card .btn {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s, transform 0.3s;
+
+    }
+    .contact-card btn-primary {
+        background-color: #007bff;
+        border: none;
+
+    }
+    .contact-card .btn-primary:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+    }
+
+
+</style>
+<body>
+    <!--contact-section-->
+    <div class="contact-section">
+        <div class="container">
+            <h1 class="display-4 text-center"><i class="fas fa-envelope">Contact us</i></h1>
+            <p class="lead text-center">Feel free to reach out to us with any queries or support needs.</p>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="contact-card shadow-lg p-3 md-5 rounded">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <lable for="username"><i class="fas fa-user"></i> Your Name</lable>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                              <div class="form-group">
+                                <lable for="userEmail"><i class="fas fa-envelope"></i> Your Email</lable>
+                                <input type="email" class="form-control" id="userEmail" required>
+                            </div>
+                              <div class="form-group">
+                                <lable for="userMessage"><i class="fas fa-comment"></i> Your Message</lable>
+                                <textarea class="form-control" id="userMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper.plane"></i> Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </select>
+</body>
+</html>
