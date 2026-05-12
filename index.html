@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,5 +7,581 @@
 </head>
 <body>
     <p>hello, world!</p>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="styesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<style>
+    body{
+         font-family: 'Roboto', sans-serif;
+         margin: 0;
+         padding: 0;
+         background: linear-gradient(to right, #e66465, #9198e5);
+    }
+    .contact-section{
+      padding: 100px 0;
+      color: #110101;
+      text-align: center;
+      position: relative;
+      background: url('pexels.pixabay-33153.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    .contact-section::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .contact-section .container{
+        position: relative;
+        z-index: 2;
+    }
+    .contact-section .display-4{
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+        animation: text-glow 2s infinite alternate;
+
+
+    }
+    .contact-section .lead{
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+    }
+    .contact-card{
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s box-shadow 0.3s;
+        position: relative;
+        border: 4px solid transparent;
+        border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        border-image-slice: 1;
+        animation: border-rotate 6s linear infinite;
+ 
+
+    }
+    @keyframes border-rotate {
+        0% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        25% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        50% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        75% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+        100% {
+            border-image: linear-gradient(45deg, #f3ec78, #af4261, #4fd1c5, #a6c1ee) 1;
+        }
+    }
+      /* @keyframes text-glow {
+        0% {
+            transform: rotate(0deg) rotate(0deg);
+        }
+         50% {
+            transform: rotate(180deg) rotate(180deg);
+        }
+         100% {
+            transform: rotate(360deg) rotate(360deg);
+        }
+
+        
+      } */
+    
+    .contact-card:hover{
+        transform: translate(0, -10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    }
+    .contact-card label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+
+    }
+    .contact-card .form-control{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+
+    }
+    .contact-card .btn {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s, transform 0.3s;
+
+    }
+    .contact-card btn-primary {
+        background-color: #007bff;
+        border: none;
+
+    }
+    .contact-card .btn-primary:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+    }
+
+
+</style>
+<body> -->
+    contact-section-->
+   <!---<div class="contact-section">
+        <div class="container">
+            <h1 class="display-4 text-center"><i class="fas fa-envelope">Contact us</i></h1>
+            <p class="lead text-center">Feel free to reach out to us with any queries or support needs.</p>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="contact-card shadow-lg p-3 md-5 rounded">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <lable for="username"><i class="fas fa-user"></i> Your Name</lable>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                              <div class="form-group">
+                                <lable for="userEmail"><i class="fas fa-envelope"></i> Your Email</lable>
+                                <input type="email" class="form-control" id="userEmail" required>
+                            </div>
+                              <div class="form-group">
+                                <lable for="userMessage"><i class="fas fa-comment"></i> Your Message</lable>
+                                <textarea class="form-control" id="userMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper.plane"></i> Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </select>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Lost & Found System</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6fb;
+      color: #333;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav button {
+      background: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s;
+      color: #1e3a8a;
+    }
+
+    nav button:hover {
+      background: #c7d2fe;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    .section {
+      display: none;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 550px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    input, textarea, select {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: none;
+      height: 90px;
+    }
+
+    .btn {
+      background: #1e3a8a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #162d6d;
+    }
+
+    .filter-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .filter-box input {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #f9fafb;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #1e3a8a;
+      margin-bottom: 5px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .lost {
+      background: #dc2626;
+    }
+
+    .found {
+      background: #16a34a;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .card small {
+      color: #666;
+    }
+
+    .delete-btn {
+      margin-top: 10px;
+      width: 100%;
+      background: #ef4444;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .delete-btn:hover {
+      background: #b91c1c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1e3a8a;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎓 College Lost & Found System</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('lost')">Report Lost</button>
+      <button onclick="showSection('found')">Report Found</button>
+      <button onclick="showSection('items')">View Items</button>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- HOME -->
+    <div id="home" class="section active">
+      <div class="hero">
+        <h2>Welcome to Lost & Found Portal</h2>
+        <p>
+          Report lost items, submit found items, and help students recover their belongings easily.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=60" alt="College Image">
+      </div>
+    </div>
+
+    <!-- LOST FORM -->
+    <div id="lost" class="section">
+      <h2 style="color:#dc2626;">📌 Report Lost Item</h2>
+      <form id="lostForm">
+        <input type="text" id="lostName" placeholder="Item Name (e.g., Wallet, Phone)" required />
+        <input type="text" id="lostLocation" placeholder="Lost Location (e.g., Library)" required />
+        <input type="date" id="lostDate" required />
+        <textarea id="lostDesc" placeholder="Description (color, brand, etc.)" required></textarea>
+        <input type="text" id="lostContact" placeholder="Your Contact (Phone/Email)" required />
+        <button class="btn" type="submit">Submit Lost Report</button>
+      </form>
+    </div>
+
+    <!-- FOUND FORM -->
+    <div id="found" class="section">
+      <h2 style="color:#16a34a;">✅ Report Found Item</h2>
+      <form id="foundForm">
+        <input type="text" id="foundName" placeholder="Item Name (e.g., Keys, Bag)" required />
+        <input type="text" id="foundLocation" placeholder="Found Location (e.g., Canteen)" required />
+        <input type="date" id="foundDate" required />
+        <textarea id="foundDesc" placeholder="Description (color, brand, etc.)" required></textarea>
+        <input type="text" id="foundContact" placeholder="Your Contact (Phone/Email)" required />
+        <button class="btn" type="submit">Submit Found Report</button>
+      </form>
+    </div>
+
+    <!-- ITEMS LIST -->
+    <div id="items" class="section">
+      <h2 style="color:#1e3a8a;">📦 Lost & Found Items</h2>
+
+      <div class="filter-box">
+        <input type="text" id="searchInput" placeholder="Search item by name..." onkeyup="displayItems()" />
+        <select id="filterType" onchange="displayItems()">
+          <option value="all">All</option>
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select>
+      </div>
+
+      <div id="itemsList" class="items-grid"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 College Lost & Found System | Frontend Project</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll(".section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+
+      if (sectionId === "items") {
+        displayItems();
+      }
+    }
+
+    function getItems() {
+      return JSON.parse(localStorage.getItem("lostFoundItems")) || [];
+    }
+
+    function saveItems(items) {
+      localStorage.setItem("lostFoundItems", JSON.stringify(items));
+    }
+
+    // LOST FORM SUBMIT
+    document.getElementById("lostForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const item = {
+        id: Date.now(),
+        type: "lost",
+        name: document.getElementById("lostName").value,
+        location: document.getElementById("lostLocation").value,
+        date: document.getElementById("lostDate").value,
+        desc: document.getElementById("lostDesc").value,
+        contact: document.getElementById("lostContact").value
+      };
+
+      const items = getItems();
+      items.push(item);
+      saveItems(items);
+
+      alert("Lost item report submitted successfully!");
+      document.getElementById("lostForm").reset();
+    });
+
+    // FOUND FORM SUBMIT
+    document.getElementById("foundForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const item = {
+        id: Date.now(),
+        type: "found",
+        name: document.getElementById("foundName").value,
+        location: document.getElementById("foundLocation").value,
+        date: document.getElementById("foundDate").value,
+        desc: document.getElementById("foundDesc").value,
+        contact: document.getElementById("foundContact").value
+      };
+
+      const items = getItems();
+      items.push(item);
+      saveItems(items);
+
+      alert("Found item report submitted successfully!");
+      document.getElementById("foundForm").reset();
+    });
+
+    // DELETE ITEM
+    function deleteItem(id) {
+      let items = getItems();
+      items = items.filter(item => item.id !== id);
+      saveItems(items);
+      displayItems();
+    }
+
+    // DISPLAY ITEMS
+    function displayItems() {
+      const itemsList = document.getElementById("itemsList");
+      const items = getItems();
+
+      const searchText = document.getElementById("searchInput").value.toLowerCase();
+      const filterType = document.getElementById("filterType").value;
+
+      const filteredItems = items.filter(item => {
+        const matchesSearch = item.name.toLowerCase().includes(searchText);
+        const matchesType = filterType === "all" || item.type === filterType;
+        return matchesSearch && matchesType;
+      });
+
+      itemsList.innerHTML = "";
+
+      if (filteredItems.length === 0) {
+        itemsList.innerHTML = "<p style='color:#555;'>No items found.</p>";
+        return;
+      }
+
+      filteredItems.reverse().forEach(item => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+          <span class="tag ${item.type}">${item.type.toUpperCase()}</span>
+          <h3>${item.name}</h3>
+          <p><b>Location:</b> ${item.location}</p>
+          <p><b>Date:</b> ${item.date}</p>
+          <p><b>Description:</b> ${item.desc}</p>
+          <p><b>Contact:</b> ${item.contact}</p>
+          <button class="delete-btn" onclick="deleteItem(${item.id})">Delete</button>
+        `;
+
+        itemsList.appendChild(card);
+      });
+    }
+  </script>
+
 </body>
 </html>
