@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +8,10 @@
   <title>Campus Lost & Found Management System</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <style>
     * {
@@ -29,6 +26,70 @@
       color: #333;
     }
 
+    /* SIGNUP PAGE */
+
+    .bg-img {
+      background-image: url("https://thumbs.dreamstime.com/b/lost-found-concept-illustration-depicting-sign-33436602.jpg");
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 350px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+    }
+
+    .container label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .container input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #1e3a8a;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #162d6d;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* HEADER */
+
     header {
       background: #1e3a8a;
       color: white;
@@ -37,7 +98,6 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     header h1 {
@@ -46,24 +106,23 @@
 
     nav {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     nav button {
       background: white;
+      color: #1e3a8a;
       border: none;
       padding: 10px 15px;
       border-radius: 6px;
       cursor: pointer;
       font-weight: bold;
-      transition: 0.3s;
-      color: #1e3a8a;
     }
 
     nav button:hover {
       background: #c7d2fe;
-      transform: translateY(-2px);
+      transform: translatey(-2px);
     }
 
     .container-custom {
@@ -85,8 +144,7 @@
     .active {
       display: block;
     }
-
-    @keyframes fade {
+     @keyframes fade {
       from {
         opacity: 0;
         transform: translateY(10px);
@@ -97,29 +155,29 @@
         transform: translateY(0);
       }
     }
-
     .hero {
       text-align: center;
       padding: 25px;
     }
 
     .hero h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
       color: #1e3a8a;
+      margin-bottom: 10px;
+      font-size: 32px;
     }
 
     .hero p {
-      font-size: 16px;
       margin-bottom: 20px;
+      font-size: 16px;
       color: #555;
+
     }
 
     .hero img {
       width: 100%;
       max-width: 700px;
       border-radius: 12px;
-      margin-top: 20px;
+      margin: 12px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     }
 
@@ -138,8 +196,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-
-    .stat-box h3 {
+     .stat-box h3 {
       margin-bottom: 10px;
     }
 
@@ -153,15 +210,14 @@
       gap: 12px;
       margin-top: 15px;
     }
-
     input,
     textarea,
     select {
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      outline: none;
-      font-size: 15px;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 14px;
     }
 
     textarea {
@@ -187,16 +243,16 @@
 
     .filter-box {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       gap: 10px;
       flex-wrap: wrap;
       margin-bottom: 15px;
     }
 
-    .filter-box input {
-      flex: 1;
-      min-width: 200px;
+    .filter-box input,
+    .filter-box select {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
 
     .items-grid {
@@ -213,7 +269,6 @@
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
       transition: 0.3s;
     }
-
     .card-item:hover {
       transform: translateY(-5px);
     }
@@ -252,14 +307,10 @@
       cursor: pointer;
       font-weight: bold;
     }
-
     .delete-btn:hover {
       background: #b91c1c;
     }
-
-    /* CONTACT */
-
-    .contact-card {
+      .contact-card {
       background: rgba(255, 255, 255, 0.95);
       padding: 40px;
       border-radius: 15px;
@@ -272,10 +323,9 @@
 
     .success-msg {
       display: none;
-      margin-top: 15px;
       color: green;
-      font-weight: bold;
       text-align: center;
+      font-weight: bold;
     }
 
     footer {
@@ -283,253 +333,275 @@
       padding: 20px;
       background: #1e3a8a;
       color: white;
-      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- SIGNUP PAGE -->
 
-  <header>
-    <h1>🎓 Campus Lost & Found Management System</h1>
+  <div class="bg-img" id="signupPage">
 
-    <nav>
-      <button onclick="showSection('home')">Home</button>
-      <button onclick="showSection('lost')">Report Lost</button>
-      <button onclick="showSection('found')">Report Found</button>
-      <button onclick="showSection('items')">View Items</button>
-      <button onclick="showSection('contact')">Contact Us</button>
-    </nav>
-  </header>
+    <form class="container" id="signupForm">
 
-  <div class="container-custom">
+      <h2>Signup</h2>
 
-    <!-- HOME -->
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
 
-    <div id="home" class="section active">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
 
-      <div class="hero">
+      <label>Username</label>
+      <input type="text" placeholder="Create username" required>
 
-        <h2>Welcome to Lost & Found Portal</h2>
+      <label>Password</label>
+      <input type="password" placeholder="Create password" required>
 
-        <p>
-          Report lost items, submit found items,
-          and help students recover their belongings easily.
-        </p>
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm password" required>
 
-        <img
-          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=60"
-          alt="Campus">
+      <button type="submit" class="button">
+        Sign Up
+      </button>
 
-        <div class="stats">
-
-          <div class="stat-box">
-            <h3 style="color:#dc2626;">Lost Items</h3>
-            <p>25+</p>
-          </div>
-
-          <div class="stat-box">
-            <h3 style="color:#16a34a;">Found Items</h3>
-            <p>18+</p>
-          </div>
-
-          <div class="stat-box">
-            <h3 style="color:#1e3a8a;">Recovered</h3>
-            <p>12+</p>
-          </div>
-
-        </div>
-
+      <div class="login-link">
+        Already have an account?
+        <a href="#">Login</a>
       </div>
 
-    </div>
-
-    <!-- LOST -->
-
-    <div id="lost" class="section">
-
-      <h2 style="color:#dc2626;">📌 Report Lost Item</h2>
-
-      <form id="lostForm">
-
-        <input type="text" id="lostName"
-          placeholder="Item Name" required />
-
-        <input type="text" id="lostLocation"
-          placeholder="Lost Location" required />
-
-        <input type="date" id="lostDate" required />
-
-        <textarea id="lostDesc"
-          placeholder="Description" required></textarea>
-
-        <input type="text" id="lostContact"
-          placeholder="Contact" required />
-
-        <button class="btn-main" type="submit">
-          Submit Lost Report
-        </button>
-
-      </form>
-
-    </div>
-
-    <!-- FOUND -->
-
-    <div id="found" class="section">
-
-      <h2 style="color:#16a34a;">✅ Report Found Item</h2>
-
-      <form id="foundForm">
-
-        <input type="text" id="foundName"
-          placeholder="Item Name" required />
-
-        <input type="text" id="foundLocation"
-          placeholder="Found Location" required />
-
-        <input type="date" id="foundDate" required />
-
-        <textarea id="foundDesc"
-          placeholder="Description" required></textarea>
-
-        <input type="text" id="foundContact"
-          placeholder="Contact" required />
-
-        <button class="btn-main" type="submit">
-          Submit Found Report
-        </button>
-
-      </form>
-
-    </div>
-
-    <!-- ITEMS -->
-
-    <div id="items" class="section">
-
-      <h2 style="color:#1e3a8a;">📦 Lost & Found Items</h2>
-
-      <div class="filter-box">
-
-        <input type="text" id="searchInput"
-          placeholder="Search item..."
-          onkeyup="displayItems()">
-
-        <select id="filterType"
-          onchange="displayItems()">
-
-          <option value="all">All</option>
-          <option value="lost">Lost</option>
-          <option value="found">Found</option>
-
-        </select>
-
-      </div>
-
-      <div id="itemsList" class="items-grid"></div>
-
-    </div>
-
-    <!-- CONTACT -->
-
-    <div id="contact" class="section">
-
-      <h2 class="text-center mb-4" style="color:#1e3a8a;">
-        📞 Contact Us
-      </h2>
-
-      <div class="row">
-
-        <div class="col-md-8 offset-md-2">
-
-          <div class="contact-card">
-
-            <form id="contactForm">
-
-              <div class="form-group">
-
-                <label>
-                  <i class="fas fa-user"></i>
-                  Your Name
-                </label>
-
-                <input type="text"
-                  class="form-control"
-                  required>
-
-              </div>
-
-              <div class="form-group">
-
-                <label>
-                  <i class="fas fa-envelope"></i>
-                  Your Email
-                </label>
-
-                <input type="email"
-                  class="form-control"
-                  required>
-
-              </div>
-
-              <div class="form-group">
-
-                <label>
-                  <i class="fas fa-comment"></i>
-                  Your Message
-                </label>
-
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  required></textarea>
-
-              </div>
-
-              <button type="submit"
-                class="btn btn-primary btn-block">
-
-                <i class="fas fa-paper-plane"></i>
-                Send Message
-
-              </button>
-
-              <div class="success-msg" id="successMsg">
-                Message Sent Successfully ✅
-              </div>
-
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+    </form>
 
   </div>
 
-  <!-- FOOTER -->
 
-  <footer>
+  <!-- MAIN WEBSITE -->
 
-    <p>
-      © 2026 Campus Lost & Found Management System
-    </p>
+  <div id="mainPage" style="display:none;">
 
-    <p>
-      Designed for College Students & Administration
-    </p>
+    <header>
+      <h1>🎓 Campus Lost & Found Management System</h1>
 
-  </footer>
+      <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('lost')">Report Lost</button>
+        <button onclick="showSection('found')">Report Found</button>
+        <button onclick="showSection('items')">View Items</button>
+        <button onclick="showSection('contact')">Contact Us</button>
+        <button onclick="showSection('ai')">AI Assistant</button>
+      </nav>
+    </header>
 
-  <!-- SCRIPT -->
+
+    <div class="container-custom">
+
+      <!-- HOME -->
+
+      <div id="home" class="section active">
+
+        <div class="hero">
+
+          <h2>Welcome to Lost & Found Portal</h2>
+
+          <p>
+            Report lost items, submit found items,
+            and help students recover their belongings easily.
+          </p>
+
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=60"
+            alt="Campus">
+
+          <div class="stats">
+
+            <div class="stat-box">
+              <h3 style="color:#dc2626;">Lost Items</h3>
+              <p>25+</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 style="color:#16a34a;">Found Items</h3>
+              <p>18+</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 style="color:#1e3a8a;">Recovered</h3>
+              <p>12+</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- LOST -->
+
+      <div id="lost" class="section">
+
+        <h2 style="color:#dc2626;">📌 Report Lost Item</h2>
+
+        <form id="lostForm">
+
+          <input type="text" id="lostName" placeholder="Item Name" required>
+
+          <input type="text" id="lostLocation" placeholder="Lost Location" required>
+
+          <input type="date" id="lostDate" required>
+
+          <textarea id="lostDesc" placeholder="Description" required></textarea>
+
+          <input type="text" id="lostContact" placeholder="Contact" required>
+
+          <button class="btn-main" type="submit">
+            Submit Lost Report
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <!-- FOUND -->
+
+      <div id="found" class="section">
+
+        <h2 style="color:#16a34a;">✅ Report Found Item</h2>
+
+        <form id="foundForm">
+
+          <input type="text" id="foundName" placeholder="Item Name" required>
+
+          <input type="text" id="foundLocation" placeholder="Found Location" required>
+
+          <input type="date" id="foundDate" required>
+
+          <textarea id="foundDesc" placeholder="Description" required></textarea>
+
+          <input type="text" id="foundContact" placeholder="Contact" required>
+
+          <button class="btn-main" type="submit">
+            Submit Found Report
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <!-- ITEMS -->
+
+      <div id="items" class="section">
+
+        <h2 style="color:#1e3a8a;">📦 Lost & Found Items</h2>
+
+        <div class="filter-box">
+
+          <input type="text" id="searchInput" placeholder="Search item..." onkeyup="displayItems()">
+
+          <select id="filterType" onchange="displayItems()">
+            <option value="all">All</option>
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+          </select>
+
+        </div>
+
+        <div id="itemsList" class="items-grid"></div>
+
+      </div>
+
+
+      <!-- CONTACT -->
+
+      <div id="contact" class="section">
+
+        <h2 style="color:#1e3a8a;">📞 Contact Us</h2>
+
+        <form id="contactForm">
+
+          <input type="text" placeholder="Your Name" required>
+
+          <input type="email" placeholder="Your Email" required>
+
+          <textarea placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn-main">
+            Send Message
+          </button>
+
+          <div class="success-msg" id="successMsg">
+            Message Sent Successfully ✅
+          </div>
+
+        </form>
+
+      </div>
+
+
+      <!-- AI SECTION -->
+
+      <div id="ai" class="section">
+
+        <h2 style="color:#1e3a8a;">🤖 AI Assistant</h2>
+
+        <div class="chat-box" id="chatBox" style="
+          height:350px;
+          overflow-y:auto;
+          border:1px solid #ccc;
+          padding:15px;
+          border-radius:10px;
+          background:#f9fafb;
+          margin-top:20px;
+        ">
+
+          <p><b>AI:</b> Hello 👋 Ask me about lost items.</p>
+
+        </div>
+
+        <div style="display:flex; margin-top:15px;">
+
+          <input type="text" id="question" class="form-control" placeholder="Ask AI something...">
+
+          <button class="btn btn-primary" onclick="askAI()" style="margin-left:10px;">
+            Send
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <footer>
+      <p>© 2026 Campus Lost & Found Management System</p>
+      <p>Designed for College Students & Administration</p>
+    </footer>
+
+  </div>
+
 
   <script>
+
+    // SIGNUP PAGE
+
+    document.getElementById("signupForm")
+      .addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        document.getElementById("signupPage").style.display = "none";
+
+        document.getElementById("mainPage").style.display = "block";
+
+        showSection("home");
+
+      });
+
+
+    // SHOW SECTION
 
     function showSection(sectionId) {
 
@@ -544,6 +616,9 @@
       }
     }
 
+
+    // LOCAL STORAGE
+
     function getItems() {
       return JSON.parse(localStorage.getItem("lostFoundItems")) || [];
     }
@@ -551,6 +626,7 @@
     function saveItems(items) {
       localStorage.setItem("lostFoundItems", JSON.stringify(items));
     }
+
 
     // LOST FORM
 
@@ -581,6 +657,7 @@
 
       });
 
+
     // FOUND FORM
 
     document.getElementById("foundForm")
@@ -610,12 +687,12 @@
 
       });
 
+
     // DELETE ITEM
 
     function deleteItem(id) {
 
-      const confirmDelete =
-        confirm("Are you sure you want to delete this item?");
+      const confirmDelete = confirm("Are you sure you want to delete this item?");
 
       if (!confirmDelete) return;
 
@@ -628,30 +705,25 @@
       displayItems();
     }
 
+
     // DISPLAY ITEMS
 
     function displayItems() {
 
-      const itemsList =
-        document.getElementById("itemsList");
+      const itemsList = document.getElementById("itemsList");
 
       const items = getItems();
 
-      const searchText =
-        document.getElementById("searchInput")
-          .value.toLowerCase();
+      const searchText = document.getElementById("searchInput")
+        .value.toLowerCase();
 
-      const filterType =
-        document.getElementById("filterType").value;
+      const filterType = document.getElementById("filterType").value;
 
       const filteredItems = items.filter(item => {
 
-        const matchesSearch =
-          item.name.toLowerCase().includes(searchText);
+        const matchesSearch = item.name.toLowerCase().includes(searchText);
 
-        const matchesType =
-          filterType === "all" ||
-          item.type === filterType;
+        const matchesType = filterType === "all" || item.type === filterType;
 
         return matchesSearch && matchesType;
 
@@ -661,8 +733,7 @@
 
       if (filteredItems.length === 0) {
 
-        itemsList.innerHTML =
-          "<p>No items found.</p>";
+        itemsList.innerHTML = "<p>No items found.</p>";
 
         return;
       }
@@ -674,7 +745,7 @@
         card.classList.add("card-item");
 
         card.innerHTML = `
-        
+
           <span class="tag ${item.type}">
             ${item.type.toUpperCase()}
           </span>
@@ -701,6 +772,7 @@
 
     }
 
+
     // CONTACT FORM
 
     document.getElementById("contactForm")
@@ -714,6 +786,127 @@
         this.reset();
 
       });
+
+
+    // AI ASSISTANT
+
+    function askAI() {
+
+      const input = document.getElementById("question");
+
+      const question = input.value.toLowerCase().trim();
+
+      if (question === "") return;
+
+      const chatBox = document.getElementById("chatBox");
+
+      chatBox.innerHTML += `
+        <p style="text-align:right; margin:10px 0;">
+          <b>You:</b> ${question}
+        </p>
+      `;
+
+      let reply = "";
+
+      if (question.includes("hello") || question.includes("hi")) {
+
+        reply = "Hello 👋 Welcome to Campus Lost & Found System.";
+
+      }
+
+      else if (question.includes("lost")) {
+
+        reply = "📌 Please go to the Report Lost section and submit your lost item details.";
+
+      }
+
+      else if (question.includes("found")) {
+
+        reply = "✅ Please go to the Report Found section and enter found item details.";
+
+      }
+
+      else if (question.includes("contact")) {
+
+        reply = "📞 You can contact college administration using the Contact Us page.";
+
+      }
+
+      else if (question.includes("thank")) {
+
+        reply = "😊 You're welcome!";
+
+      }
+
+      else if (question.includes("bye")) {
+
+        reply = "👋 Goodbye! Have a nice day.";
+
+      }
+
+      else {
+
+        reply = "🤖 Sorry, I can only help with lost and found related questions.";
+
+      }
+
+      chatBox.innerHTML += `
+        <p style="margin:10px 0;">
+          <b>AI:</b> ${reply}
+        </p>
+      `;
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      input.value = "";
+
+    }
+
+
+    // ENTER KEY
+
+    document.getElementById("question")
+      .addEventListener("keypress", function (e) {
+
+        if (e.key === "Enter") {
+          askAI();
+        }
+
+      });
+      // TYPING EFFECT
+
+  chatBox.innerHTML += `
+    <p id="typing">
+      <b>AI:</b> Typing...
+    </p>
+  `;
+
+  chatBox.scrollTop =
+    chatBox.scrollHeight;
+
+  setTimeout(() => {
+
+    document
+      .getElementById("typing")
+      .remove();
+
+    chatBox.innerHTML += `
+      <p style="margin:10px 0;">
+        <b>AI:</b> ${reply}
+      </p>
+    `;
+
+    chatBox.scrollTop =
+      chatBox.scrollHeight;
+
+  }, 800);
+
+  input.value = "";
+
+
+
+
+    displayItems();
 
   </script>
 
